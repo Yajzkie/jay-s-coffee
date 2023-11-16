@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html> 
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Coffee</title>
+    <link rel="stylesheet" href="style1.css"> 
+    <link rel href="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/fontawesome.min.css">
+</head>
+<body> 
+  <section class="header">
+    <nav>
+      <a href="index.blade.php"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>"
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="coffee.php">MENU</a></li>
+          <li><a href="add.php">BLOG</a></li>
+          <li><a href="list.php">ORDERS</a></li>
+          <li><a href="order_form.php">ORDER</a></li>
+          <li><a href="logout.php">LOG OUT</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+      <h1>Jay Coffee</h1>
+      <p>Coffee is a way of stealing time that should by rights belong to your older self.
+      </p>
+      <a href="" class="hero-btn">Visit Us To Know More</a>
+      </div>
+
+  </section>
+    <!-------- Facilities --------->
+    <section class="facilities" id="blog">
+      <h1>Our Facilities</h1>
+      <p>Very Clean, Very Fast, Very Amej.</p>
+      <div class="row">
+
+      <div class="facilities-col"> 
+        <img src="img/office.jpeg">
+        <h3>World Class Taste</h3>
+        <p>Creamylious, Delicious and perfect aroma.</p>
+      
+      </div>
+      <div class="facilities-col"> 
+        <img src="img/photo.jpeg">
+        <h3>World Class Prize</h3>
+        <p>For only 39 Pesos.</p>
+    
+
+      </div>
+      <div class="facilities-col"> 
+        <img src="img/tower.jpeg">
+        <h3>Record Breaking</h3>
+        <p>One minute per serving.</p>
+
+      </div>
+    </div>
+
+    </section>
+
+<!------ testimonials ---------->
+
+<section class="testimonials" id="contact">
+  <h1>What Our Customer Says</h1>
+  <p>Perfect Coffee Ever.</p>
+  
+  <div class="row">
+ 
+
+<!----- Call To Action ------->
+<section class="cta">
+  <h2>Boook for online Transaction<br>Anywhere From The World</h2>
+    <a href="" class="hero-btn">CONTACT US</a>
+</section>
+<!------- Footer ------->
+<section class="footer"> 
+  <h4>About Us</h4>
+  <p>Very Respectful and Responsible <br>COD, Pay as you order</p> 
+  <div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-linkedin"></i>
+  </div>
+</section>
+
+
+
+
+
+
+
+  <!--------Javascript for Toggle Menu---------->
+  <script>
+    var navLinks = document.getElementById("navLinks")
+
+    function showMenu(){
+      navLinks.style.right = "0";
+    }
+    function hideMenu(){
+      navLinks.style.right = "-200px"
+    }
+  </script>
+</body>
+
+</html>
